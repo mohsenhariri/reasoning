@@ -3,24 +3,85 @@
 
 <head>
     <meta charset="utf-8">
-
-    <title>LLM Reasoning</title>
-
+    <title>Reasoning in Large Language Models</title>
     <link rel="stylesheet" href="./dist/reveal.css">
     <link rel="stylesheet" href="./dist/theme/white.css" id="theme">
-
     <link rel="stylesheet" href="./plugin/highlight/monokai.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        #landing-page {
+            text-align: center;
+            padding: 50px;
+        }
+
+        #landing-page h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        #landing-page h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        #landing-page p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        #links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+
+        #menu {
+            margin-top: 30px;
+        }
+
+        #menu button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #menu button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="landing-page">
+        <h1>Reasoning in Large Language Models</h1>
+        <h2>Presented by Mohsen Hariri</h2>
+        <p>Date: Sep 27</p>
+        <div id="links">
+            <a href="mailto:your_email@example.com">Email</a>
+            <a href="https://yourwebsite.com" target="_blank">Website</a>
+        </div>
 
-    <div class="reveal">
+        <div id="menu">
+            <button onclick="startPresentation('CoT.md')">CoT Presentation</button>
+            <button onclick="startPresentation('DoT.md')">DoT Presentation</button>
+        </div>
+    </div>
 
+    <div class="reveal" style="display: none;">
         <div class="slides">
-
-            <section data-markdown="./CoT.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+            <section data-markdown="" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
             </section>
-
         </div>
     </div>
 
@@ -31,18 +92,25 @@
     <script src="./plugin/math/math.js"></script>
 
     <script>
+        function startPresentation(markdownFile) {
+            // Hide the landing page
+            document.getElementById('landing-page').style.display = 'none';
+            // Show the presentation container
+            document.querySelector('.reveal').style.display = 'block';
+            // Set the data-markdown attribute to load the selected file
+            document.querySelector('.slides section').setAttribute('data-markdown', './' + markdownFile);
 
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
+            // Initialize Reveal.js with the selected presentation
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
 
-            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
-        });
-
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+            });
+        }
     </script>
-
 </body>
 
 </html>
