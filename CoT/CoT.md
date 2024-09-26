@@ -157,5 +157,47 @@ Contributions:
 - **One-step RaR** and **Two-step RaR**
 
 
+## Recursive Reasoning
+
+## Recursive Decomposition
+Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
+
+- Easy to hard generalization
+- Least to most prompting
+- In contrast to CoT, least-to-most prompting starts with the simplest form of the task and gradually increases the complexity of the task by asking questions.
+
+![alt text](image-9.png)
+
+Leat-to-Most Prompting:
+1. Decomposition. The prompt in this stage contains constant examples that demonstrate the
+decomposition, followed by the specific question to be decomposed.
+1. Subproblem solving. The prompt in this stage consists of three parts: (1) constant examples demonstrating how subproblems are solved; (2) a potentially empty list of previously
+answered subquestions and generated solutions, and (3) the question to be answered next.
+
+
+
+## Tree of Thoughts
+
+Tree of Thoughts: A Hierarchical Approach to Reasoning in Large Language Models
+
+- Hierarchical reasoning
+- Tree of Thoughts (ToT)
+- A tree structure that represents the reasoning process of a model.
+- Each node in the tree represents a reasoning step.
+- Each edge in the tree represents the relationship between the reasoning steps.
+- The root node is the input prompt.
+- The leaf nodes are the final answers.
+- The internal nodes are intermediate reasoning steps.
+- The tree structure is constructed by the model itself.
+- 
+![alt text](image-10.png)
+
+
+## Contrastive Reasoning
+
+![alt text](image-11.png)
+
+
 ## References
 1. [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
+
