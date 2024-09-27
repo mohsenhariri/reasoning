@@ -10,35 +10,70 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f2f2f2;
             margin: 0;
+            /* Background image that fills the page */
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
         }
 
+        /* Landing page styles */
         #landing-page {
             text-align: center;
-            padding: 50px;
+            padding: 3%;
+            margin: 5% auto;
+            /* max-width: 800px; */
+
+            width: 50%;
+
+            background-color: rgba(0, 0, 0, 0.3);
+            /* padding: 50px; */
+            /* margin: 0 auto; */
+            /* max-width: 800px; */
+            /* Remove semi-transparent background */
+            /* background-color: rgba(255, 255, 255, 0.85); */
+            /* For older browsers that don't support rgba */
+            /* background-color: #ffffff; */
+            /* opacity: 0.95; */
         }
 
         #landing-page h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 3vw;
+            margin: 0 auto 3%;
+            color: #ffffff;
+            /* White text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            /* Text shadow for readability */
         }
 
         #landing-page h2 {
-            font-size: 24px;
+            font-size: 1.5vw;
             margin-bottom: 5px;
+            color: #ffffff;
+            /* White text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
+
+
         #landing-page p {
-            font-size: 18px;
+            font-size: 1vw;
             margin-bottom: 30px;
+            color: #ffffff;
+            /* White text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
         #links a {
-            margin: 0 10px;
+            margin: .5%;
             text-decoration: none;
-            color: #007BFF;
-            font-size: 18px;
+            color: #FFD700;
+            /* Gold color for links */
+            font-size: .8vw;
+        }
+
+        #links a:hover {
+            text-decoration: underline;
         }
 
         #menu {
@@ -46,27 +81,50 @@
         }
 
         #menu button {
-            padding: 15px 30px;
-            font-size: 18px;
-            margin: 10px;
+            padding: .7vw 1.4vw;
+            font-size: 1vw;
+            margin: .7vw;
             cursor: pointer;
-            background-color: #007BFF;
+            background-color: #FFD700;
+            /* Gold color for buttons */
             border: none;
-            color: white;
+            color: #333;
+            /* Dark text on buttons */
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         #menu button:hover {
-            background-color: #0056b3;
+            background-color: #FFC107;
+        }
+
+        #left {
+            margin: 10px 0 15px 20px;
+            text-align: left;
+            float: left;
+            z-index: -10;
+            width: 48%;
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+
+        #right {
+            margin: 10px 0 15px 0;
+            float: right;
+            text-align: left;
+            z-index: -10;
+            width: 48%;
+            font-size: 0.85em;
+            line-height: 1.5;
         }
     </style>
 </head>
 
 <body>
     <div id="landing-page">
-        <h1>Reasoning in Large Language Models</h1>
-        <h2>Presented by Mohsen Hariri</h2>
-        <p>Date: Sep 27</p>
+        <h1>Reasoning <br> in <br> Large Language Models</h1>
+        <h2>Mohsen Hariri</h2>
+        <p>September 2024</p>
         <div id="links">
             <a href="mailto:your_email@example.com">Email</a>
             <a href="https://yourwebsite.com" target="_blank">Website</a>
@@ -75,6 +133,8 @@
         <div id="menu">
             <button onclick="startPresentation('CoT.md')">CoT Presentation</button>
             <button onclick="startPresentation('DoT.md')">DoT Presentation</button>
+            <button onclick="startPresentation('Beyond_Reasoning.md')">Beyond Reasoning</button>
+
         </div>
     </div>
 
@@ -106,7 +166,6 @@
                 progress: true,
                 history: true,
                 center: true,
-
                 plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
             });
         }
