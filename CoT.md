@@ -2,22 +2,8 @@
 Reasoning elicited from model weights.
 
 
-
 ## Elicit Reasoning
-
 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
-- Published in 2022
-- Conference: NeurIPS 2022
-- Google Research and Brain Team
-- Cited by 7.2k
-<details>
-  <summary>Click to reveal content</summary>
-  
-  This is the hidden content. You can put anything here: text, lists, code blocks, etc.
-  
-</details>
-
-
 - **Chain of Thoughts (CoT)**
     - A series of intermediate reasoning steps.
     - Example:
@@ -26,18 +12,15 @@ Reasoning elicited from model weights.
         - [intermediate steps will be generated]
         - [answer will be generated]
 
-![alt text](./CoT/image-2.png)
+
+<img src="./CoT/image-2.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Wide range of tasks:
-![alt text](./CoT/image-3.png){fig-align="center" width="60%" }
-<!-- <img src="./CoT/image-3.png" alt="Alt text" style="width:80%; height:auto;"> -->
-<!-- <img src="./CoT/image-3.png" alt="Alt text" style="width:70%"> -->
+<img src="./CoT/image-3.png" alt="Alt text" style="width:90%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
-
-
-Contribution:
+Contribution
 - Chain of thoughts (CoT) = a series of intermediate reasoning steps
 - Instead of asking a question directly, provide a series of intermediate reasoning steps.
 
@@ -95,14 +78,14 @@ Contribution:
         - [intermediate steps will be generated]
         - [answer will be generated]
 
-![alt text](./CoT/image.png)
+
+<img src="./CoT/image.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
-
-Contributions:
+Contributions
 - Let's think step by step.
 
-Notes:
+Notes
 - It can be complementary to the CoT. E.g., reasoning steps start with "Let's think step by step" and continue with CoT.
 
 
@@ -118,35 +101,41 @@ Notes:
     - Re-read the prompt.
     - "bidirectional" understanding of the prompt.
 
-![alt text](./CoT/image-1.png)
+
+<img src="./CoT/image-1.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
 
 Contributions:
 - Provide a prompt twice.
 
 
+
 ## Self-Ask
 
-[2210.03350] Measuring and Narrowing the Compositionality Gap in Language Models
-
+[Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2203.11171)
 
 Compositional Reasoning:
 
 Cognitive process of understanding complex concepts or systems by breaking them down into their constituent parts and understanding the relationships between these parts.
 
 
+<img src="./CoT/image-4.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
-![alt text](./CoT/image-4.png)
 
-This method can be used with retrieval information.
+Contributions:
+- This method can be used with retrieval information.
 
-![alt text](./CoT/image-5.png)
+<img src="./CoT/image-5.png" alt="Alt text" style="width:40%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
+
 
 ## Rephrase and Respond
 
 Rephrase and Respond: Let Large Language Models Ask Better Questions for Themselves
 
 Motivating Example
-![alt text](./CoT/image-6.png)
+<img src="./CoT/image-6.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
 
 **Rephrase and Respond**
 - One-step RaR
@@ -162,12 +151,13 @@ Motivating Example
         - {Rephrased Question}
         - Use your answer to the rephrased question to answer the original question.
 
-![alt text](./CoT/image-7.png)
+
+<img src="./CoT/image-7.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Learning from few-shot exemplars:
 
-![alt text](./CoT/image-8.png)
+<img src="./CoT/image-8.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Contributions:
@@ -176,7 +166,6 @@ Contributions:
 - **One-step RaR** and **Two-step RaR**
 
 
-## Recursive Reasoning
 
 ## Recursive Decomposition
 Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
@@ -185,13 +174,27 @@ Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
 - Least to most prompting
 - In contrast to CoT, least-to-most prompting starts with the simplest form of the task and gradually increases the complexity of the task by asking questions.
 
-![alt text](./CoT/image-9.png)
+
+<img src="./CoT/image-9.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
 
 Leat-to-Most Prompting:
 1. Decomposition. The prompt in this stage contains constant examples that demonstrate the
 decomposition, followed by the specific question to be decomposed.
 1. Subproblem solving. The prompt in this stage consists of three parts: (1) constant examples demonstrating how subproblems are solved; (2) a potentially empty list of previously
 answered subquestions and generated solutions, and (3) the question to be answered next.
+
+
+
+## Contrastive Reasoning
+<img src="./CoT/image-11.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
+
+
+## Self-consistency
+[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171)
+
+<img src="./CoT/image-13.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 
@@ -207,16 +210,19 @@ Tree of Thoughts: A Hierarchical Approach to Reasoning in Large Language Models
 - The root node is the input prompt.
 - The leaf nodes are the final answers.
 - The internal nodes are intermediate reasoning steps.
-- The tree structure is constructed by the model itself.
-- 
-![alt text](./CoT/image-10.png)
 
+ 
 
-## Contrastive Reasoning
+<img src="./CoT/image-10.png" alt="Alt text" style="width:40%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
-![alt text](./CoT/image-11.png)
 
 
 ## References
 1. [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
-
+2. [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2103.13425)
+3. [Re-Reading Improves Reasoning in Large Language Models](https://arxiv.org/abs/2109.07547)
+4. [Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2203.11171)
+5. [Rephrase and Respond: Let Large Language Models Ask Better Questions for Themselves](https://arxiv.org/abs/2203.11171)
+6. [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://arxiv.org/abs/2203.11171)
+7. [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171)
+8. [Tree of Thoughts: A Hierarchical Approach to Reasoning in Large Language Models](https://arxiv.org/abs/2203.11171)

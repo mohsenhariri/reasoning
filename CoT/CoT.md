@@ -4,12 +4,6 @@ Reasoning elicited from model weights.
 ## Elicit Reasoning
 
 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
-- Published in 2022
-- Conference: NeurIPS 2022
-- Google Research and Brain Team
-- Cited by 7.2k
-
-
 
 - **Chain of Thoughts (CoT)**
     - A series of intermediate reasoning steps.
@@ -176,6 +170,17 @@ answered subquestions and generated solutions, and (3) the question to be answer
 
 
 
+
+## Contrastive Reasoning
+
+![alt text](image-11.png)
+
+
+## Self-consistency
+[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171)
+
+![alt text](image-13.png)
+
 ## Tree of Thoughts
 
 Tree of Thoughts: A Hierarchical Approach to Reasoning in Large Language Models
@@ -192,10 +197,6 @@ Tree of Thoughts: A Hierarchical Approach to Reasoning in Large Language Models
 - 
 ![alt text](image-10.png)
 
-
-## Contrastive Reasoning
-
-![alt text](image-11.png)
 
 
 ## References
