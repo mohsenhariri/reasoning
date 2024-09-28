@@ -2,6 +2,7 @@
 Reasoning elicited from model weights.
 
 
+
 ## Elicit Reasoning
 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
 - **Chain of Thoughts (CoT)**
@@ -17,7 +18,7 @@ Reasoning elicited from model weights.
 
 
 Wide range of tasks:
-<img src="./CoT/image-3.png" alt="Alt text" style="width:90%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./CoT/image-3.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Contribution
@@ -33,6 +34,8 @@ Contribution
 - **Zero-shot**
     - Model has never trained on the task. (as far as we know!)
     - Questions are asked LLMs without any context.
+
+
     - Example:
         - Task: Question Answering
         - input
@@ -52,12 +55,9 @@ Contribution
 
 
 - **Few-shot-CoT**
-    - Again, model has never trained on the task.
-    - Like few-shot, model is given a few examples of the task.
-    - But, in each exemplar, model is also given intermediate steps to solve the task.
+    - In each exemplar, model is also given intermediate steps to solve the task.
     - Example:
         - Task: Question Answering
-        - Examples: 
             - Q1
             - Intermediate steps to solve Q1
             - A1
@@ -68,7 +68,6 @@ Contribution
 
 
 - **Zero-shot-CoT**
-    - Again, model has never trained on the task.
     - Unlike few-shot-CoT, model is not given any intermediate steps.
     - The provided prompt encourages the model to generate intermediate steps by adding "Let's think step by step" at the beginning of the prompt.
     - Example:
@@ -102,7 +101,7 @@ Notes
     - "bidirectional" understanding of the prompt.
 
 
-<img src="./CoT/image-1.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./CoT/image-1.png" alt="Alt text" style="width:90%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Contributions:
@@ -125,7 +124,7 @@ Cognitive process of understanding complex concepts or systems by breaking them 
 Contributions:
 - This method can be used with retrieval information.
 
-<img src="./CoT/image-5.png" alt="Alt text" style="width:40%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./CoT/image-5.png" alt="Alt text" style="width:35%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 
@@ -141,6 +140,8 @@ Motivating Example
 - One-step RaR
     - {Question}
     - Rephrase and expand the question, and respond.
+
+
 - Two-step RaR
     - Let Stronger LLMs Rephrase for Weaker LLMs to Respond.
     - step 1:
@@ -152,12 +153,11 @@ Motivating Example
         - Use your answer to the rephrased question to answer the original question.
 
 
-<img src="./CoT/image-7.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./CoT/image-7.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Learning from few-shot exemplars:
-
-<img src="./CoT/image-8.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./CoT/image-8.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Contributions:
@@ -175,7 +175,7 @@ Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
 - In contrast to CoT, least-to-most prompting starts with the simplest form of the task and gradually increases the complexity of the task by asking questions.
 
 
-<img src="./CoT/image-9.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./CoT/image-9.png" alt="Alt text" style="width:90%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Leat-to-Most Prompting:
@@ -187,7 +187,7 @@ answered subquestions and generated solutions, and (3) the question to be answer
 
 
 ## Contrastive Reasoning
-<img src="./CoT/image-11.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./CoT/image-11.png" alt="Alt text" style="width:190%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 
@@ -198,22 +198,8 @@ answered subquestions and generated solutions, and (3) the question to be answer
 
 
 
-## Tree of Thoughts
-
-Tree of Thoughts: A Hierarchical Approach to Reasoning in Large Language Models
-
-- Hierarchical reasoning
-- Tree of Thoughts (ToT)
-- A tree structure that represents the reasoning process of a model.
-- Each node in the tree represents a reasoning step.
-- Each edge in the tree represents the relationship between the reasoning steps.
-- The root node is the input prompt.
-- The leaf nodes are the final answers.
-- The internal nodes are intermediate reasoning steps.
-
- 
-
-<img src="./CoT/image-10.png" alt="Alt text" style="width:40%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+## Other Approaches
+<img src="./CoT/image-10.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 
