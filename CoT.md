@@ -83,8 +83,6 @@ Contribution
 
 Contributions
 - Let's think step by step.
-
-Notes
 - It can be complementary to the CoT. E.g., reasoning steps start with "Let's think step by step" and continue with CoT.
 
 
@@ -114,8 +112,7 @@ Contributions:
 [Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2203.11171)
 
 Compositional Reasoning:
-
-Cognitive process of understanding complex concepts or systems by breaking them down into their constituent parts and understanding the relationships between these parts.
+* Cognitive process of understanding complex concepts or systems by breaking them down into their constituent parts and understanding the relationships between these parts.
 
 
 <img src="./CoT/image-4.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
