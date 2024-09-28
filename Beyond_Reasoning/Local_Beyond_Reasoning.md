@@ -59,9 +59,6 @@ Good at Deductive Reasoning
 ![alt text](image.jpg)
 
 
-
-## Bounded Rationality
-
 - Why are we satisfied by “good enough?”
   - Omniscient
   - Omnipotent

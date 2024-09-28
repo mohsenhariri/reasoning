@@ -57,11 +57,15 @@ Reasoning is one of the most fundamental cognitive processes that distinguishes 
 
 
 ## Factual or Counterfactual?
-<img src="./Beyond_Reasoning/image-7.png" alt="Alt text" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./Beyond_Reasoning/image-7.png" alt="Alt text" style="width:40%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 ## Factual or Counterfactual?
-<img src="./Beyond_Reasoning/image-8.png" alt="Alt text" style="width:90%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+<img src="./Beyond_Reasoning/image-8.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
+
+## Reversal Curse
+<img src="./Beyond_Reasoning/image-9.png" alt="Alt text" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 Mathematical tools to explore reasoning in LLMs:
@@ -121,6 +125,28 @@ Good at Deductive Reasoning
     <strong>Bounded rationality</strong> is the idea that when individuals make decisions, their rationality is limited by the information they have, the cognitive limitations of their minds, and the finite amount of time they have to make a decision. It was proposed by <strong>Herbert Simon</strong> as an alternative to the classical theory of rationality, which assumes that people make decisions by optimizing.
 </p>
 
+
+## Need more time?
+* NO!
+* One more reason to be satisfied by "good enough."
+
+
+
+## LLMs and Cognitive Biases
+* Human survival
+* Survivorship bias
+* Bounded rationality
+* Mental shortcuts
+
+
+## Biases, Safety, and Ethics
+* Now I need more time!
+* Constrained decoding
+<img src="./Beyond_Reasoning/image-10.png" alt="Alt text" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
+
+## Cost 
+<img src="./Beyond_Reasoning/image-11.png" alt="Alt text" style="width:60%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
 
