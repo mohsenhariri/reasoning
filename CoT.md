@@ -29,7 +29,7 @@ Contribution
 
 ## Zero-shot CoT (zero-shot reasoning)
 
-[Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2103.13425)
+[Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
 
 - **Zero-shot**
     - Model has never trained on the task. (as far as we know!)
@@ -89,7 +89,7 @@ Contributions
 
 ## Re-Reading Prompt
 
-[Re-Reading Improves Reasoning in Large Language Models](https://arxiv.org/abs/2109.07547)
+[Re-Reading Improves Reasoning in Large Language Models](https://arxiv.org/abs/2309.06275)
 
 - **Zero-shot-CoT**
     - Let's think step by step.
@@ -109,7 +109,7 @@ Contributions:
 
 ## Self-Ask
 
-[Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2203.11171)
+[Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2210.03350)
 
 Compositional Reasoning:
 * Cognitive process of understanding complex concepts or systems by breaking them down into their constituent parts and understanding the relationships between these parts.
@@ -127,7 +127,7 @@ Contributions:
 
 ## Rephrase and Respond
 
-Rephrase and Respond: Let Large Language Models Ask Better Questions for Themselves
+[Rephrase and Respond: Let Large Language Models Ask Better Questions for Themselves](https://arxiv.org/abs/2311.04205)
 
 Motivating Example
 <img src="./CoT/image-6.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
@@ -165,7 +165,7 @@ Contributions:
 
 
 ## Recursive Decomposition
-Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
+[Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://arxiv.org/abs/2205.10625)
 
 - Easy to hard generalization
 - Least to most prompting
@@ -184,6 +184,7 @@ answered subquestions and generated solutions, and (3) the question to be answer
 
 
 ## Contrastive Reasoning
+[Contrastive Chain-of-Thought Prompting](https://arxiv.org/abs/2311.09277)
 <img src="./CoT/image-11.png" alt="Alt text" style="width:190%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
