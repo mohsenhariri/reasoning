@@ -139,6 +139,14 @@ Good at Deductive Reasoning
 * Mental shortcuts
 
 
+## Lost in the middle
+Serial position effect
+* Primacy effect
+* Recency effect
+<img src="./Beyond_Reasoning/image-12.png" alt="Alt text" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto;">
+
+
+
 ## Biases, Safety, and Ethics
 * Now I need more time!
 * Constrained decoding
