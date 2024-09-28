@@ -10,7 +10,6 @@ Reasoning with retrieval information in large language models.
 * incorrect retrieval of relevant knowledge during inference stage 
 
 
-
 <img src="./CoT_Retrieval/image.png" alt="Alt text" style="width:80%; height:auto; display:block; margin-left:auto; margin-right:auto;">
 
 
