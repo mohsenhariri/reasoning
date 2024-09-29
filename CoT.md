@@ -203,10 +203,10 @@ answered subquestions and generated solutions, and (3) the question to be answer
 
 ## References
 1. [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
-2. [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2103.13425)
-3. [Re-Reading Improves Reasoning in Large Language Models](https://arxiv.org/abs/2109.07547)
-4. [Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2203.11171)
-5. [Rephrase and Respond: Let Large Language Models Ask Better Questions for Themselves](https://arxiv.org/abs/2203.11171)
-6. [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://arxiv.org/abs/2203.11171)
-7. [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171)
-8. [Tree of Thoughts: A Hierarchical Approach to Reasoning in Large Language Models](https://arxiv.org/abs/2203.11171)
+2. [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
+3. [Re-Reading Improves Reasoning in Large Language Models](https://arxiv.org/abs/2309.06275)
+4. [Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/abs/2210.03350)
+5. [Rephrase and Respond: Let Large Language Models Ask Better Questions for Themselves](https://arxiv.org/abs/2311.04205)
+6. [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://arxiv.org/abs/2205.10625)
+7. [Contrastive Chain-of-Thought Prompting](https://arxiv.org/abs/2311.09277)
+8. [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171)
